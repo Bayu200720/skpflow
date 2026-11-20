@@ -99,6 +99,14 @@ npm run db:pull    # introspect database ke prisma/schema.prisma
 
 `AI_PROVIDER=groq` tanpa `AI_API_KEY`, atau error/kuota habis, otomatis fallback ke provider mock agar demo tetap berjalan. `STORAGE_DRIVER=local` menulis ke `storage/uploads` dan menyajikan file lewat route terproteksi; `s3` memakai presigned URL 10 menit; `supabase` memakai Storage REST (bucket privat, service role hanya di server) dan menyajikan file lewat route terproteksi.
 
+## Performa
+
+- Fungsi serverless dipin ke region `sin1` (Singapore) lewat `vercel.json`, satu region dengan Supabase `ap-southeast-1`; ini menghilangkan RTT lintas benua per query.
+- `DATABASE_URL` memakai transaction pooler dengan `connection_limit=5` agar query paralel tidak diserialisasi.
+- Vercel Fluid compute aktif untuk mengurangi cold start dan berbagi instance.
+- Router cache dinamis 30 detik (`experimental.staleTimes`) + `loading.tsx` skeleton untuk navigasi ulang yang instan.
+- Sesi memakai JWT (tanpa query DB); login hanya satu query (role di-join), dashboard menjalankan query agregat secara paralel.
+
 ## Deploy ke Vercel (free tier)
 
 Target: **Vercel Hobby + Supabase Free (Postgres) + Cloudflare R2 atau Supabase Storage + Groq free tier**.

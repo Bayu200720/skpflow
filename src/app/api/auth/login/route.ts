@@ -18,6 +18,7 @@ export async function POST(request: Request) {
   const { identifier, password } = parsed.data;
   const user = await prisma.users.findFirst({
     where: { OR: [{ email: identifier }, { nip: identifier }] },
+    include: { roles: true },
   });
 
   if (!user || !user.is_active) {
@@ -29,8 +30,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Password salah." }, { status: 401 });
   }
 
-  const role = await prisma.roles.findUnique({ where: { id: user.role_id } });
-  const roleName = role?.name === "Atasan" ? "ATASAN" : role?.name === "Admin" ? "ADMIN" : "ASN";
+  const roleName = user.roles?.name === "Atasan" ? "ATASAN" : user.roles?.name === "Admin" ? "ADMIN" : "ASN";
 
   const token = await createSessionToken({
     id: user.id,
