@@ -107,6 +107,20 @@ npm run db:pull    # introspect database ke prisma/schema.prisma
 - Router cache dinamis 30 detik (`experimental.staleTimes`) + `loading.tsx` skeleton untuk navigasi ulang yang instan.
 - Sesi memakai JWT (tanpa query DB); login hanya satu query (role di-join), dashboard menjalankan query agregat secara paralel.
 
+Hasil benchmark production (2026-11-20, fungsi `sin1`, Supabase `ap-southeast-1`):
+
+| Endpoint | Sebelum | Sesudah (warm) |
+| --- | --- | --- |
+| `/api/health` | ~1,4 s | 74–165 ms |
+| `/dashboard` | ~4,8 s | 75–450 ms |
+| `/activities` | ~4,5 s | 88–346 ms |
+| `/reports` | ~2,4 s | 76–400 ms |
+| `/profile` | ~7,2 s | 81–111 ms |
+| `/admin` | — | 81–151 ms |
+| Login | ~1,5 s (cold) | ~495 ms |
+
+Cold start sesekali masih ~0,4–0,6 s; `bcrypt` cost 12 menyumbang ~300–400 ms pada login.
+
 ## Deploy ke Vercel (free tier)
 
 Target: **Vercel Hobby + Supabase Free (Postgres) + Cloudflare R2 atau Supabase Storage + Groq free tier**.
