@@ -1,0 +1,235 @@
+<svg viewBox="0 0 1000 720" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-label="Mockup dashboard SKPFlow">
+  <!-- App window -->
+  <rect x="8" y="8" width="984" height="704" rx="16" fill="var(--surface)" stroke="var(--border)" stroke-width="1.5"/>
+  <line x1="218" y1="8" x2="218" y2="712" stroke="var(--border)" stroke-width="1"/>
+
+  <!-- Logo -->
+  <rect x="28" y="30" width="28" height="28" rx="8" fill="var(--accent)" opacity="0.14"/>
+  <text x="42" y="49" text-anchor="middle" font-size="15" font-weight="700" fill="var(--accent)">S</text>
+  <text x="64" y="49" font-size="16" font-weight="700" fill="var(--fg)">SKPFlow</text>
+
+  <!-- Sidebar nav -->
+  <rect x="20" y="88" width="178" height="36" rx="10" fill="var(--accent)" opacity="0.10"/>
+  <g stroke="var(--accent)" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <rect x="28" y="98" width="6" height="6" rx="1"/>
+    <rect x="37" y="98" width="6" height="6" rx="1"/>
+    <rect x="28" y="107" width="6" height="6" rx="1"/>
+    <rect x="37" y="107" width="6" height="6" rx="1"/>
+  </g>
+  <text x="52" y="110" font-size="12" font-weight="600" fill="var(--accent)">Dashboard</text>
+
+  <g stroke="var(--muted)" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <line x1="28" y1="142" x2="44" y2="142"/>
+    <line x1="28" y1="148" x2="44" y2="148"/>
+    <line x1="28" y1="154" x2="38" y2="154"/>
+  </g>
+  <text x="52" y="152" font-size="12" fill="var(--muted)">Aktivitas Harian</text>
+
+  <g stroke="var(--muted)" stroke-width="1.6" fill="none">
+    <circle cx="36" cy="188" r="8"/>
+    <circle cx="36" cy="188" r="3"/>
+  </g>
+  <text x="52" y="194" font-size="12" fill="var(--muted)">Target Kinerja</text>
+
+  <g stroke="var(--muted)" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <line x1="28" y1="236" x2="28" y2="224"/>
+    <line x1="34" y1="236" x2="34" y2="218"/>
+    <line x1="40" y1="236" x2="40" y2="228"/>
+    <line x1="46" y1="236" x2="46" y2="222"/>
+  </g>
+  <text x="52" y="236" font-size="12" fill="var(--muted)">Rekap Mingguan</text>
+
+  <g stroke="var(--muted)" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M28 266 h12 l4 4 v12 h-16 z"/>
+    <line x1="32" y1="274" x2="40" y2="274"/>
+    <line x1="32" y1="278" x2="38" y2="278"/>
+  </g>
+  <text x="52" y="278" font-size="12" fill="var(--muted)">Laporan Bulanan</text>
+
+  <g stroke="var(--muted)" stroke-width="1.6" fill="none">
+    <circle cx="36" cy="314" r="5"/>
+    <path d="M28 330 q8 -8 16 0"/>
+  </g>
+  <text x="52" y="320" font-size="12" fill="var(--muted)">Profil</text>
+
+  <!-- Sidebar user -->
+  <line x1="20" y1="600" x2="206" y2="600" stroke="var(--border)" stroke-width="1"/>
+  <rect x="20" y="620" width="178" height="76" rx="10" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <circle cx="42" cy="658" r="16" fill="var(--accent)" opacity="0.14"/>
+  <text x="42" y="662" text-anchor="middle" font-size="9" font-weight="700" fill="var(--accent)">SA</text>
+  <text x="66" y="654" font-size="12" font-weight="600" fill="var(--fg)">Siti Aminah</text>
+  <text x="66" y="670" font-size="9" fill="var(--muted)">Staf Infrastruktur</text>
+
+  <!-- Topbar -->
+  <text x="240" y="44" font-size="20" font-weight="700" fill="var(--fg)">Dashboard</text>
+  <text x="240" y="64" font-size="12" fill="var(--muted)">Kamis, 20 November 2026</text>
+
+  <rect x="540" y="28" width="200" height="32" rx="8" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <g stroke="var(--muted)" stroke-width="1.5" fill="none">
+    <circle cx="556" cy="44" r="5"/>
+    <line x1="560" y1="48" x2="564" y2="52"/>
+  </g>
+  <text x="574" y="48" font-size="11" fill="var(--muted)">Cari aktivitas...</text>
+
+  <g stroke="var(--muted)" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M764 44 q0 -8 8 -8 t8 8 v4 l3 4 h-22 l3 -4 z"/>
+    <line x1="772" y1="58" x2="776" y2="58"/>
+  </g>
+  <circle cx="780" cy="34" r="3" fill="var(--accent)"/>
+
+  <circle cx="820" cy="44" r="16" fill="var(--accent)" opacity="0.14"/>
+  <text x="820" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="var(--accent)">SA</text>
+
+  <!-- Greeting -->
+  <text x="240" y="112" font-size="22" font-weight="700" fill="var(--fg)">Selamat pagi, Siti</text>
+  <text x="240" y="132" font-size="13" fill="var(--muted)">Berikut ringkasan aktivitas dan kinerja Anda hari ini.</text>
+
+  <rect x="820" y="96" width="148" height="36" rx="10" fill="var(--accent)"/>
+  <path d="M836 114 h10 M841 109 v10" stroke="var(--surface)" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="852" y="118" font-size="11" font-weight="600" fill="var(--surface)">Tambah Aktivitas</text>
+
+  <!-- KPI cards -->
+  <rect x="240" y="150" width="170" height="84" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="256" y="172" font-size="10" fill="var(--muted)">Aktivitas hari ini</text>
+  <text x="256" y="204" font-size="28" font-weight="700" fill="var(--fg)">2</text>
+  <text x="256" y="222" font-size="9" fill="var(--success)">+1 dari kemarin</text>
+
+  <rect x="422" y="150" width="170" height="84" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="438" y="172" font-size="10" fill="var(--muted)">Aktivitas bulan ini</text>
+  <text x="438" y="204" font-size="28" font-weight="700" fill="var(--fg)">19</text>
+  <text x="438" y="222" font-size="9" fill="var(--muted)">dari 22 hari kerja</text>
+
+  <rect x="604" y="150" width="170" height="84" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="620" y="172" font-size="10" fill="var(--muted)">Target aktif</text>
+  <text x="620" y="204" font-size="28" font-weight="700" fill="var(--fg)">2</text>
+  <text x="620" y="222" font-size="9" fill="var(--muted)">2 target berjalan</text>
+
+  <rect x="786" y="150" width="170" height="84" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="802" y="172" font-size="10" fill="var(--muted)">Status laporan</text>
+  <text x="802" y="200" font-size="16" font-weight="700" fill="var(--fg)">Submitted</text>
+  <text x="802" y="222" font-size="9" fill="var(--warning)">Menunggu review atasan</text>
+
+  <!-- Chart: 7 days -->
+  <rect x="240" y="254" width="460" height="190" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="256" y="278" font-size="13" font-weight="700" fill="var(--fg)">Aktivitas 7 hari terakhir</text>
+  <text x="256" y="294" font-size="10" fill="var(--muted)">Total 19 aktivitas</text>
+
+  <g stroke="var(--border)" stroke-width="1" stroke-dasharray="3 4" opacity="0.6">
+    <line x1="270" y1="414" x2="684" y2="414"/>
+    <line x1="270" y1="387" x2="684" y2="387"/>
+    <line x1="270" y1="360" x2="684" y2="360"/>
+    <line x1="270" y1="334" x2="684" y2="334"/>
+  </g>
+
+  <rect x="290" y="401" width="28" height="13" rx="4" fill="var(--c1)" opacity="0.45"/>
+  <rect x="344" y="412" width="28" height="2" rx="1" fill="var(--c1)" opacity="0.20"/>
+  <rect x="398" y="374" width="28" height="40" rx="4" fill="var(--c1)" opacity="0.45"/>
+  <rect x="452" y="347" width="28" height="67" rx="4" fill="var(--c1)" opacity="0.45"/>
+  <rect x="506" y="387" width="28" height="27" rx="4" fill="var(--c1)" opacity="0.45"/>
+  <rect x="560" y="334" width="28" height="80" rx="4" fill="var(--c1)" opacity="0.45"/>
+  <rect x="614" y="387" width="28" height="27" rx="4" fill="var(--accent)"/>
+
+  <g font-size="9" fill="var(--muted)" text-anchor="middle">
+    <text x="304" y="432">Sab</text>
+    <text x="358" y="432">Min</text>
+    <text x="412" y="432">Sen</text>
+    <text x="466" y="432">Sel</text>
+    <text x="520" y="432">Rab</text>
+    <text x="574" y="432">Kam</text>
+    <text x="628" y="432">Jum</text>
+  </g>
+
+  <!-- Chart: categories -->
+  <rect x="716" y="254" width="252" height="190" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="732" y="278" font-size="13" font-weight="700" fill="var(--fg)">Aktivitas per kategori</text>
+  <text x="732" y="294" font-size="10" fill="var(--muted)">November 2026</text>
+
+  <text x="732" y="316" font-size="10" fill="var(--fg)">Infrastruktur</text>
+  <text x="952" y="316" font-size="10" fill="var(--muted)" text-anchor="end">8</text>
+  <rect x="732" y="322" width="220" height="8" rx="4" fill="var(--border)" opacity="0.25"/>
+  <rect x="732" y="322" width="176" height="8" rx="4" fill="var(--c1)"/>
+
+  <text x="732" y="348" font-size="9" fill="var(--fg)">Pengembangan Aplikasi</text>
+  <text x="952" y="348" font-size="10" fill="var(--muted)" text-anchor="end">5</text>
+  <rect x="732" y="354" width="220" height="8" rx="4" fill="var(--border)" opacity="0.25"/>
+  <rect x="732" y="354" width="110" height="8" rx="4" fill="var(--c2)"/>
+
+  <text x="732" y="380" font-size="10" fill="var(--fg)">Rapat</text>
+  <text x="952" y="380" font-size="10" fill="var(--muted)" text-anchor="end">3</text>
+  <rect x="732" y="386" width="220" height="8" rx="4" fill="var(--border)" opacity="0.25"/>
+  <rect x="732" y="386" width="66" height="8" rx="4" fill="var(--c3)"/>
+
+  <text x="732" y="412" font-size="10" fill="var(--fg)">Dokumentasi</text>
+  <text x="952" y="412" font-size="10" fill="var(--muted)" text-anchor="end">2</text>
+  <rect x="732" y="418" width="220" height="8" rx="4" fill="var(--border)" opacity="0.25"/>
+  <rect x="732" y="418" width="44" height="8" rx="4" fill="var(--c4)"/>
+
+  <!-- Recent activities -->
+  <rect x="240" y="460" width="460" height="236" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="256" y="484" font-size="13" font-weight="700" fill="var(--fg)">Aktivitas terbaru</text>
+  <text x="684" y="484" font-size="10" fill="var(--accent)" text-anchor="end">Lihat semua</text>
+
+  <!-- Row 1 -->
+  <rect x="256" y="510" width="44" height="32" rx="6" fill="var(--border)" opacity="0.10"/>
+  <text x="278" y="524" font-size="11" font-weight="700" fill="var(--fg)" text-anchor="middle">20</text>
+  <text x="278" y="536" font-size="8" fill="var(--muted)" text-anchor="middle">Nov</text>
+  <text x="312" y="524" font-size="12" font-weight="600" fill="var(--fg)">Dokumentasi topologi jaringan</text>
+  <text x="312" y="540" font-size="9" fill="var(--muted)">Dokumentasi</text>
+  <rect x="600" y="512" width="84" height="20" rx="10" fill="var(--warning)" opacity="0.12"/>
+  <text x="642" y="526" font-size="9" fill="var(--warning)" text-anchor="middle">Proses</text>
+
+  <line x1="256" y1="550" x2="684" y2="550" stroke="var(--border)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Row 2 -->
+  <rect x="256" y="558" width="44" height="32" rx="6" fill="var(--border)" opacity="0.10"/>
+  <text x="278" y="572" font-size="11" font-weight="700" fill="var(--fg)" text-anchor="middle">19</text>
+  <text x="278" y="584" font-size="8" fill="var(--muted)" text-anchor="middle">Nov</text>
+  <text x="312" y="572" font-size="12" font-weight="600" fill="var(--fg)">Pengecekan log server</text>
+  <text x="312" y="588" font-size="9" fill="var(--muted)">Infrastruktur</text>
+  <rect x="600" y="560" width="84" height="20" rx="10" fill="var(--warning)" opacity="0.12"/>
+  <text x="642" y="574" font-size="9" fill="var(--warning)" text-anchor="middle">Proses</text>
+
+  <line x1="256" y1="598" x2="684" y2="598" stroke="var(--border)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Row 3 -->
+  <rect x="256" y="606" width="44" height="32" rx="6" fill="var(--border)" opacity="0.10"/>
+  <text x="278" y="620" font-size="11" font-weight="700" fill="var(--fg)" text-anchor="middle">19</text>
+  <text x="278" y="632" font-size="8" fill="var(--muted)" text-anchor="middle">Nov</text>
+  <text x="312" y="620" font-size="12" font-weight="600" fill="var(--fg)">Pengecekan kapasitas storage</text>
+  <text x="312" y="636" font-size="9" fill="var(--muted)">Infrastruktur</text>
+  <rect x="600" y="608" width="84" height="20" rx="10" fill="var(--warning)" opacity="0.12"/>
+  <text x="642" y="622" font-size="9" fill="var(--warning)" text-anchor="middle">Proses</text>
+
+  <line x1="256" y1="646" x2="684" y2="646" stroke="var(--border)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Row 4 -->
+  <rect x="256" y="654" width="44" height="32" rx="6" fill="var(--border)" opacity="0.10"/>
+  <text x="278" y="668" font-size="11" font-weight="700" fill="var(--fg)" text-anchor="middle">18</text>
+  <text x="278" y="680" font-size="8" fill="var(--muted)" text-anchor="middle">Nov</text>
+  <text x="312" y="668" font-size="12" font-weight="600" fill="var(--fg)">Verifikasi data cuti pegawai</text>
+  <text x="312" y="684" font-size="9" fill="var(--muted)">Administrasi</text>
+  <rect x="600" y="656" width="84" height="20" rx="10" fill="var(--success)" opacity="0.12"/>
+  <text x="642" y="670" font-size="9" fill="var(--success)" text-anchor="middle">Selesai</text>
+
+  <!-- Targets -->
+  <rect x="716" y="460" width="252" height="236" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="732" y="484" font-size="13" font-weight="700" fill="var(--fg)">Target kinerja</text>
+  <text x="952" y="484" font-size="10" fill="var(--accent)" text-anchor="end">Kelola</text>
+
+  <text x="732" y="510" font-size="10" fill="var(--fg)">Uptime server produksi</text>
+  <text x="732" y="526" font-size="9" fill="var(--muted)">99,8% dari 99,5%</text>
+  <rect x="732" y="534" width="220" height="6" rx="3" fill="var(--border)" opacity="0.25"/>
+  <rect x="732" y="534" width="219" height="6" rx="3" fill="var(--success)"/>
+
+  <text x="732" y="566" font-size="10" fill="var(--fg)">Backup database mingguan</text>
+  <text x="732" y="582" font-size="9" fill="var(--muted)">42 dari 48 backup</text>
+  <rect x="732" y="590" width="220" height="6" rx="3" fill="var(--border)" opacity="0.25"/>
+  <rect x="732" y="590" width="192" height="6" rx="3" fill="var(--accent)"/>
+
+  <text x="732" y="622" font-size="10" fill="var(--fg)">Dokumentasi SOP</text>
+  <text x="732" y="638" font-size="9" fill="var(--muted)">3 dari 5 dokumen</text>
+  <rect x="732" y="646" width="220" height="6" rx="3" fill="var(--border)" opacity="0.25"/>
+  <rect x="732" y="646" width="132" height="6" rx="3" fill="var(--c2)"/>
+
+  <text x="732" y="676" font-size="9" fill="var(--muted)">Diperbarui hari ini</text>
+</svg>

@@ -1,0 +1,129 @@
+<svg viewBox="0 0 390 844" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-label="Mockup mobile tambah aktivitas SKPFlow">
+  <!-- Phone frame -->
+  <rect x="8" y="8" width="374" height="828" rx="24" fill="var(--surface)" stroke="var(--border)" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <path d="M33 40 L23 50 L33 60" fill="none" stroke="var(--fg)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="195" y="55" text-anchor="middle" font-size="15" font-weight="700" fill="var(--fg)">Tambah Aktivitas</text>
+  <path d="M356 42 L368 54 M368 42 L356 54" fill="none" stroke="var(--muted)" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="24" y="86" font-size="11" fill="var(--muted)">Catat aktivitas dengan cepat. AI membantu merapikan.</text>
+
+  <!-- Input card -->
+  <rect x="20" y="104" width="350" height="146" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="36" y="126" font-size="10" fill="var(--muted)">Apa yang Anda kerjakan?</text>
+  <rect x="296" y="112" width="58" height="22" rx="11" fill="var(--accent)" opacity="0.12"/>
+  <text x="313" y="127" font-size="9" fill="var(--accent)">AI</text>
+  <circle cx="344" cy="123" r="7" fill="var(--accent)"/>
+
+  <g font-size="11" fill="var(--fg)">
+    <text x="36" y="150">Hari ini melakukan backup database SIMOPPA,</text>
+    <text x="36" y="166">mengecek server, dan memperbaiki bug login</text>
+    <text x="36" y="182">aplikasi.</text>
+  </g>
+
+  <g stroke="var(--muted)" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <rect x="340" y="222" width="8" height="12" rx="4"/>
+    <line x1="344" y1="234" x2="344" y2="238"/>
+    <line x1="341" y1="240" x2="347" y2="240"/>
+  </g>
+
+  <!-- Date -->
+  <text x="20" y="270" font-size="10" fill="var(--muted)">Tanggal</text>
+  <rect x="20" y="276" width="350" height="42" rx="10" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <g stroke="var(--muted)" stroke-width="1.3" fill="none" stroke-linecap="round">
+    <rect x="32" y="286" width="10" height="10" rx="2"/>
+    <line x1="32" y1="290" x2="42" y2="290"/>
+    <line x1="35" y1="283" x2="35" y2="287"/>
+    <line x1="39" y1="283" x2="39" y2="287"/>
+  </g>
+  <text x="54" y="302" font-size="12" fill="var(--fg)">20 November 2026</text>
+  <path d="M348 295 L352 299 L356 295" fill="none" stroke="var(--muted)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Output -->
+  <text x="20" y="338" font-size="10" fill="var(--muted)">Hasil (opsional)</text>
+  <rect x="20" y="344" width="350" height="42" rx="10" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="36" y="370" font-size="11" fill="var(--muted)">Mis. 1 file backup, 2 bug fixed</text>
+
+  <!-- AI suggestion -->
+  <rect x="20" y="402" width="350" height="250" rx="12" fill="none" stroke="var(--border)" stroke-width="1"/>
+  <text x="36" y="426" font-size="12" font-weight="700" fill="var(--fg)">AI menyarankan 3 aktivitas</text>
+  <text x="36" y="442" font-size="10" fill="var(--muted)">Periksa dan pilih yang ingin disimpan.</text>
+
+  <!-- Row 1 -->
+  <rect x="36" y="458" width="18" height="18" rx="4" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="1.2"/>
+  <path d="M40 467 L43 470 L50 463" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="64" y="468" font-size="11" font-weight="600" fill="var(--fg)">Backup database SIMOPPA</text>
+  <text x="64" y="484" font-size="9" fill="var(--muted)">Infrastruktur</text>
+  <g fill="var(--muted)">
+    <circle cx="344" cy="466" r="1.5"/>
+    <circle cx="348" cy="466" r="1.5"/>
+    <circle cx="352" cy="466" r="1.5"/>
+  </g>
+
+  <line x1="36" y1="498" x2="354" y2="498" stroke="var(--border)" stroke-width="1" opacity="0.6"/>
+
+  <!-- Row 2 -->
+  <rect x="36" y="510" width="18" height="18" rx="4" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="1.2"/>
+  <path d="M40 519 L43 522 L50 515" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="64" y="520" font-size="11" font-weight="600" fill="var(--fg)">Monitoring server produksi</text>
+  <text x="64" y="536" font-size="9" fill="var(--muted)">Infrastruktur</text>
+  <g fill="var(--muted)">
+    <circle cx="344" cy="518" r="1.5"/>
+    <circle cx="348" cy="518" r="1.5"/>
+    <circle cx="352" cy="518" r="1.5"/>
+  </g>
+
+  <line x1="36" y1="550" x2="354" y2="550" stroke="var(--border)" stroke-width="1" opacity="0.6"/>
+
+  <!-- Row 3 -->
+  <rect x="36" y="562" width="18" height="18" rx="4" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="1.2"/>
+  <path d="M40 571 L43 574 L50 567" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="64" y="572" font-size="11" font-weight="600" fill="var(--fg)">Perbaikan bug login aplikasi</text>
+  <text x="64" y="588" font-size="9" fill="var(--muted)">Pengembangan Aplikasi</text>
+  <g fill="var(--muted)">
+    <circle cx="344" cy="570" r="1.5"/>
+    <circle cx="348" cy="570" r="1.5"/>
+    <circle cx="352" cy="570" r="1.5"/>
+  </g>
+
+  <text x="36" y="632" font-size="9" fill="var(--muted)">3 aktivitas dipilih</text>
+
+  <!-- Primary action -->
+  <rect x="20" y="672" width="350" height="48" rx="12" fill="var(--accent)"/>
+  <text x="195" y="701" text-anchor="middle" font-size="13" font-weight="700" fill="var(--surface)">Simpan 3 Aktivitas</text>
+  <text x="195" y="736" text-anchor="middle" font-size="11" fill="var(--muted)">Batalkan</text>
+
+  <!-- Bottom nav -->
+  <line x1="20" y1="760" x2="370" y2="760" stroke="var(--border)" stroke-width="1"/>
+
+  <g stroke="var(--muted)" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <rect x="44" y="774" width="5" height="5" rx="1"/>
+    <rect x="52" y="774" width="5" height="5" rx="1"/>
+    <rect x="44" y="782" width="5" height="5" rx="1"/>
+    <rect x="52" y="782" width="5" height="5" rx="1"/>
+  </g>
+  <text x="50" y="806" font-size="9" fill="var(--muted)" text-anchor="middle">Dashboard</text>
+
+  <g stroke="var(--muted)" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <line x1="108" y1="776" x2="120" y2="776"/>
+    <line x1="108" y1="781" x2="120" y2="781"/>
+    <line x1="108" y1="786" x2="115" y2="786"/>
+  </g>
+  <text x="114" y="806" font-size="9" fill="var(--muted)" text-anchor="middle">Aktivitas</text>
+
+  <circle cx="195" cy="778" r="22" fill="var(--accent)"/>
+  <path d="M195 770 v16 M187 778 h16" stroke="var(--surface)" stroke-width="2" stroke-linecap="round"/>
+
+  <g stroke="var(--muted)" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <path d="M272 774 h12 l3 3 v10 h-15 z"/>
+    <line x1="276" y1="781" x2="284" y2="781"/>
+    <line x1="276" y1="784" x2="282" y2="784"/>
+  </g>
+  <text x="278" y="806" font-size="9" fill="var(--muted)" text-anchor="middle">Laporan</text>
+
+  <g stroke="var(--muted)" stroke-width="1.4" fill="none">
+    <circle cx="340" cy="776" r="4"/>
+    <path d="M333 790 q7 -7 14 0"/>
+  </g>
+  <text x="340" y="806" font-size="9" fill="var(--muted)" text-anchor="middle">Profil</text>
+</svg>

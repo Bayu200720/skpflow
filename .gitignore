@@ -1,0 +1,15 @@
+node_modules
+.next
+.env
+.env.local
+.DS_Store
+*.tsbuildinfo
+_dash.png
+_preview_dash.html
+_preview_mobile.html
+/storage/uploads/
+
+/supabase/.temp/
+/supabase/.branches/
+
+.vercel
