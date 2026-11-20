@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, CheckCircle2, Loader2, Send, XCircle } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Download, Loader2, Send, XCircle } from "lucide-react";
 import { SECTION_LABELS } from "@/lib/reports";
 
 type Section = { id: string; section_key: string; content: string; sort_order: number };
@@ -159,17 +159,37 @@ export default function ReportDetailClient({
             {report.owner.unit_name ? ` · ${report.owner.unit_name}` : ""}
           </p>
         </div>
-        {permissions.isOwner && ["draft", "revision"].includes(report.status) ? (
-          <div className="flex flex-wrap gap-2">
-            <button onClick={() => void saveDraft()} disabled={saving} className="rounded-xl border border-slate-200 px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50">
-              {saving ? "Menyimpan..." : "Simpan draft"}
-            </button>
-            <button onClick={() => void submit()} disabled={submitting} className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2 text-xs font-semibold text-white hover:bg-blue-700 disabled:opacity-50">
-              {submitting ? <Loader2 size={14} className="animate-spin" /> : <Send size={14} />}
-              Kirim untuk review
-            </button>
-          </div>
-        ) : null}
+        <div className="flex flex-wrap items-center gap-2">
+          <a
+            href={`/api/reports/${report.id}/export?format=pdf`}
+            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50"
+          >
+            <Download size={13} /> PDF
+          </a>
+          <a
+            href={`/api/reports/${report.id}/export?format=docx`}
+            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50"
+          >
+            <Download size={13} /> Word
+          </a>
+          <a
+            href={`/api/reports/${report.id}/export?format=xlsx`}
+            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50"
+          >
+            <Download size={13} /> Excel
+          </a>
+          {permissions.isOwner && ["draft", "revision"].includes(report.status) ? (
+            <>
+              <button onClick={() => void saveDraft()} disabled={saving} className="rounded-xl border border-slate-200 px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50">
+                {saving ? "Menyimpan..." : "Simpan draft"}
+              </button>
+              <button onClick={() => void submit()} disabled={submitting} className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2 text-xs font-semibold text-white hover:bg-blue-700 disabled:opacity-50">
+                {submitting ? <Loader2 size={14} className="animate-spin" /> : <Send size={14} />}
+                Kirim untuk review
+              </button>
+            </>
+          ) : null}
+        </div>
       </div>
 
       {error ? <div className="rounded-xl bg-red-50 px-4 py-2 text-xs text-red-700">{error}</div> : null}

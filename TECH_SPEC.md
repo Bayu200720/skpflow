@@ -242,7 +242,7 @@ Error:
 | PATCH | `/api/reports/:id/sections/:key` | Edit satu section |
 | POST | `/api/reports/:id/submit` | Ajukan ke atasan |
 | POST | `/api/reports/:id/reviews` | Atasan memberi komentar/revisi/approval |
-| GET | `/api/reports/:id/export` | Export PDF/DOCX |
+| GET | `/api/reports/:id/export?format=pdf\|docx\|xlsx\|md` | Export laporan PDF/DOCX/XLSX/Markdown |
 
 ### 6.6 AI
 

@@ -14,7 +14,7 @@ Stack: Next.js 15 (App Router) + TypeScript + Tailwind CSS + Prisma + PostgreSQL
 - Quick add AI: satu paragraf dipecah menjadi beberapa draft aktivitas yang bisa dikoreksi sebelum disimpan.
 - Target kinerja: CRUD, progres capaian dari kuantitas aktivitas terhubung.
 - Rekap mingguan berbasis AI (fallback mock).
-- Laporan bulanan: generate draft otomatis (7 seksi), edit, submit, review atasan (approve/revisi/komentar), export Markdown.
+- Laporan bulanan: generate draft otomatis (7 seksi), edit, submit, review atasan (approve/revisi/komentar), export **PDF, Word (.docx), Excel (.xlsx)**, dan Markdown.
 - Lampiran aktivitas: upload privat, unduh via signed URL (S3) atau route terproteksi (lokal).
 - Admin: kelola user, role, unit, atasan, status aktif, reset password.
 - `GET /api/health` untuk health check sekaligus keep-alive Supabase free tier.
